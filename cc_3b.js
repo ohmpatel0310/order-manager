@@ -3,27 +3,52 @@
 let inventory = [
     {
         sku: "SKU-001",
-        name: "Chocolate Bronwie",
+        name: "Chocolate Brownie",
         price: 2.99,
         stock: 75
     },
     {
         sku: "SKU-002",
-        name: "Double Chocolat Chunk Bronwie",
+        name: "Double Chocolate Chunk Brownie",
         price: 3.99,
         stock: 50
     },
     {
         sku: "SKU-003",
-        name: "Mint Chocolate Bronwie",
+        name: "Mint Chocolate Brownie",
         price: 2.99,
         stock: 65
     },
     {
         sku: "SKU-004",
-        name: "Chocolate Bronwie",
+        name: "Gluten Free Brownie",
         price: 3.50,
         stock: 95
     }
 ];
+
+inventory.forEach(function(product){
+    console.log(`${product.sku} | ${product.name} | $${product.price} | ${product.stock}`)
+})
+
+// Step 3: Manage Inventory Changes
+
+inventory.push(
+    {
+        sku: "SKU-005",
+        name: "Dubai Chocolate Brownie",
+        price: 4.99,
+        stock: 100
+    }
+);
+
+let removed = inventory.pop();
+console.log(`Removed Item: ${removed.name}`);
+
+inventory[0].price = 1.99
+inventory[2].stock = 85
+
+inventory.forEach(function(product){
+    console.log(`${product.sku} | ${product.name} | $${product.price} | ${product.stock}`)
+})
 
