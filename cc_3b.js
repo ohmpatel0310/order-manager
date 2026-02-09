@@ -52,3 +52,25 @@ inventory.forEach(function(product){
     console.log(`${product.sku} | ${product.name} | $${product.price} | ${product.stock}`)
 })
 
+// Step 4: Create and Process Orders
+
+let orders = [
+    {
+        orderId: "001",
+        items: [
+            {
+                sku: "SKU-001",
+                qty: 20
+            }
+        ]
+    },
+    {
+        orderId: "002",
+        items: [
+            {
+                sku: "SKU-005",
+                qty: 10
+            }
+        ]
+    }
+]

@@ -1,0 +1,2 @@
+# Order Fulfillment Manager
+This is a simple JavaScript project that simulates an order fulfillment system for a small business. It demonstrates my ability to work with arrays and objects to manage product inventory and process customer orders.
